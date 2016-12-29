@@ -1,0 +1,21 @@
+(lp0
+(S'foo'
+p1
+S'bar'
+p2
+tp3
+a(S'How does digital signing work?'
+p4
+S'It uses a key exchange like public key encryption, except the keys are reversed: Private key encrypts, Public key decrypts. People get the public key from a trusted source,  CA, and they know that the signature could have only been created by the private key, which only the verified party has access to.'
+p5
+tp6
+a(S'foo'
+p7
+S'bar'
+p8
+tp9
+a(S''
+p10
+g10
+tp11
+a.
