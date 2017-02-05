@@ -18,4 +18,99 @@ a(S''
 p10
 g10
 tp11
+a(S'How are sets different than arrays?'
+p12
+S"Multiple ways. Sets are more like objects. Sets don't allow duplicates, either giving errors or just keeping them unique. Sets are UNORDERED, so the results might be FIFO or random or whatever the implementation is. Sets can usually cast to a list, add or remove, not much to them."
+p13
+tp14
+a(S'Explain bubblesort'
+p15
+S'Complexity O(n^2). Basically because it uses a loop within a loop. It goes through over and over swapping two side by side items, and then reduces the end by one each time, knowing that item is sorted.'
+p16
+tp17
+a(S'Explain insertion sort'
+p18
+S'Not much better than bubblesort, but a little more useful. Goes one by one through the whole list, and inserts that number into what it has went through, ordered.'
+p19
+tp20
+a(S'Explain merge sort'
+p21
+S"One of the most common, along with quicksort. O(n log n). Splits the array into a left and a right over and over, and keeps 'micro-sorting- each inner array. Sorting occurs by comparing each list one index to another index. Once the left or right is used up, the rest of the list is appended."
+p22
+tp23
+a(S'Explain basic quicksort'
+p24
+S'Choose a pivot, often just the last element. The pivot is just the middle number that divides left and right. Hopefully it is something that is around the median number. You then break the list into two, those that are smaller and those that are larger than the pivot. Then recursively quicksort those lists, and then concat them with the pivot in the middle.'
+p25
+tp26
+a(S'What are arrays good at performance wise, vs what are linked lists good at?'
+p27
+S"Arrays are great for reads, fine for pushes, but are expensive for inserts or deletes. Everything has to be shuffled around on insert or delete. Linked Lists are the opposite--reads take some time, but deleting an item in the middle or replacing an item doesn't affect more than just three items."
+p28
+tp29
+a(S'Why are binary search trees useful?'
+p30
+S"The lookups are logarithmic, O(log n). That is because of divide and conquer. Everything is put as in left or right, bigger or smaller, and half of the possibilities are cut out each time. It might also be faster to insert than into a sorted array, you don't have to always shuffle everything around on inserts, although deletes are rough."
+p31
+tp32
+a(S'What is an AVL tree?'
+p33
+S'It is a Binary Search Tree that knows how to balance itself if one path becomes two or more greater in depth.'
+p34
+tp35
+a(S'Why are AVL trees useful?'
+p36
+S'It keeps worst case lookups to O(log n), instead of possibilities of O(n) for basic BSTs'
+p37
+tp38
+a(S'How do AVL trees balance themselves?'
+p39
+S'There is a balancing algorithm they have to do. When they add an item, they go up each level and check if each node is in balance. If out of balance, they rotate the node and parent node, and then move the parent to be a stem of the node, and move any other children accordingly.'
+p40
+tp41
+a(S'How fast are Hash Table lookups, and why?'
+p42
+S'Lookups are O(1), same as Arrays. The hash becomes the index just like an Array index, making it very quick to jump to the value. So no need to store a variable for a hash lookup always.'
+p43
+tp44
+a(S'Kafka Controllers are responsible for what 3 things?'
+p45
+S'Keeping track of number of workers, what work needs to be assigned, and to report on status of workers doing work.'
+p46
+tp47
+a(S'Do you have to specify all brokers in a Kafka producer?'
+p48
+S"No. The broker reached will return metadata about all brokers and topics, including those not in the producer's list. The messages can then be sent to a different broker as needed."
+p49
+tp50
+a(S'How is VPN traffic routed?'
+p51
+S"Everything you do on a VPN goes through the VPN server to the gateway there. Potentially whoever runs the VPN server could monitor your traffic. It will appear as if you are coming from the VPN location, so people often will VPN from other countries to access Netflix or other services that aren't in their own country."
+p52
+tp53
+a(S'What is a Priority Queue?'
+p54
+S'It acts like a queue, but each node has a priority, and the priority comes before sorted order. It is usually implemented using a Heap data structure (which is a binary tree that has each parent always a higher number than its children).'
+p55
+tp56
+a(S'What is a Heap?'
+p57
+S'It is a "partially sorted" binary tree, which is a binary tree that has each parent always a higher number than its children.'
+p58
+tp59
+a(S'What is exchanged on the first and second request for OAuth?'
+p60
+S'First request gets an Authorization Code, sent to the callback. Second request gets an Access Token.'
+p61
+tp62
+a(S'How does JavaScript event bubbling work?'
+p63
+S'The event is triggered on the most specific element (deepest in the dom). It bubbles up to parents until one handles that type of event. To prevent this, event.stopPropagation() will prevent any further bubbling for the current event.'
+p64
+tp65
+a(S'What is the difference between event bubbling and eveng capturing?'
+p66
+S'Bubbling is the default event listening behavior. The deepest DOM element handles the event first. Whereas event capturing handles the shallowest DOM element first (e.g. the HTML element, ththen the BODY element)'
+p67
+tp68
 a.
